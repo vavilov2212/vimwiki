@@ -1,12 +1,8 @@
 IOS simulator
 
-```bash
-xcrun simctl --help
-``` - target booted device and do stuff
+```bash xcrun simctl --help ``` - target booted device and do stuff
 
-```bash
-xcrun simctl list 
-``` - list all available devices
+```bash xcrun simctl list ``` - list all available devices
 
 ```bash xcrun simctl install <|device id i.e. D597E9DC-4217-477E-9D76-75D1F4AE0BB5|> <|/path/to/app/ i.e. ~/Downloads/application_name.app|>``` - install app in simulator.
 
