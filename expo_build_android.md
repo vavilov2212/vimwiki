@@ -30,11 +30,11 @@ Don't forget to put "privacy": "unlisted" under "expo" tag in app.json config fi
   "expo": {
     "name": "Application Name",
     "slug": "your published app will be under this adrees e.g. @expo/[expo-login-name]/[slug]",
-    "scheme": "teamshop",
+    "scheme": "app",
     # "privacy": "unlisted",
     "sdkVersion": "37.0.0",
     "platforms": ["ios", "android", "web"],
-    "version": "1.0.9",
+    "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon-dev.png",
   }
@@ -55,8 +55,8 @@ EXPO_ANDROID_KEY_PASSWORD="password" \
 turtle build:android \
 --config app.json \
 --type apk \
---output ~/clarus/build/application_name.apk \
---keystore-path ~/clarus/build/keystore/keystore.jks \
+--output ~/path/to/build/application_name.apk \
+--keystore-path ~/path/to/build/keystore/keystore.jks \
 --keystore-alias "keyalias" \
 -u expo_login \
 -p expo_password
@@ -69,4 +69,4 @@ Common errors:
 $JAVA_HOME должна указывать на соответствующую версию jdk
 ~/.config/fish/config.fish
 set -gx JAVA_HOME /Volumes/Macintosh HD/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home $JAVA_HOME
-set -gx PATH ~/clarus/teamshop-mobile/node_modules/fastlane/ $PATH
+set -gx PATH ~/path/to/application_project_dir/node_modules/fastlane/ $PATH
