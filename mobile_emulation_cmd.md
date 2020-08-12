@@ -1,8 +1,9 @@
 IOS simulator
 
+target booted device and do stuff
 ```bash
 xcrun simctl --help
-``` - target booted device and do stuff
+```
 
 ```bashxcrun simctl list``` - list all available devices
 
