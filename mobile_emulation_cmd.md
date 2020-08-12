@@ -10,7 +10,7 @@ xcrun simctl list
 ```
 ##### Install app in simulator.
 ```bash
-xcrun simctl install <deviceId> <~/Downloads/application_name.app>
+xcrun simctl install ~deviceId~ ~~/Downloads/application_name.app~
 ```
 ##### If there is an error when app is booted in simulator.
 ```bash
