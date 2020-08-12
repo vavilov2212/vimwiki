@@ -18,5 +18,5 @@ xattr -dr com.apple.quarantine <~/Downloads/application_name.app>
 ```
 ##### Open link in simulator.
 ```bash
-xcrun simctl openurl <deviceId> ' https://www.example.com/?link=1C-280'
+xcrun simctl openurl <deviceId> 'https://www.example.com/?link=1C-280'
 ```
