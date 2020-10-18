@@ -1,4 +1,6 @@
 _site
+.*.orig
+.**/*.orig
 .DS_Store
 .sass-cache
 .jekyll-cache
