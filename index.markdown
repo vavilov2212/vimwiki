@@ -1,9 +1,7 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: default
-title: Guides
+title: {{site.title}}
+permalink: /
 ---
-<h1 class="page-heading">Guides to common developments practices</h1>
+<h1 class="page-heading">Wellcome!</h1>
 

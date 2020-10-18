@@ -1,0 +1,125 @@
+@import "normalize";
+@import "fonts";
+@import "rouge-base16-dark";
+@import "not_relevant";
+
+header {
+  padding: 2em;
+  position: fixed;
+  top: 0;
+  left:0;
+  right:0;
+  text-align: center;
+  background: #fbfbfb;
+  box-shadow: 1px 0px 2px rgba(0,0,0,.75);
+  z-index:99;
+  -webkit-font-smoothing:antialiased;
+  min-height: 76px;
+
+  h1 {
+    font: 40px/48px 'Copse', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: 1px 3px 1px rgba(0,0,0,.75);
+    margin: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+  }
+
+  p {
+    color: 1px 3px 1px rgba(0,0,0,.75);
+    text-shadow:rgba(#000, 0.2) 0 1px 0;
+    font-size: 18px;
+    margin: 0px;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#maintanance {
+  position: absolute;
+  display: block;
+  float: right;
+  max-width: 12.5em;
+  right: 2em;
+  top: 2em;
+  text-align: right;
+  line-height: 2em;
+
+  p {
+    font-size: 1em;
+  }
+
+  a {
+    line-height: 2em;
+  }
+}
+
+#logo {
+  position: relative;
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../images/octocat-logo.svg);
+}
+
+@media print, screen and (max-width: 1060px) {
+
+  header {
+    float:none;
+
+    h1 {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -o-text-overflow: ellipsis;
+      -ms-text-overflow: ellipsis;
+    }
+  }
+}
+
+@media print, screen and (max-width: 720px) {
+  header {
+    padding:20px 20px;
+    margin: 0;
+
+    h1 {
+      font-size: 32px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -o-text-overflow: ellipsis;
+      -ms-text-overflow: ellipsis;
+    }
+  }
+}
+
+@media print, screen and (max-height: 680px) {
+}
+
+@media print, screen and (max-width: 480px) {
+  header{
+    position: relative;
+    padding: 5px 0px;
+    min-height: 0px;
+
+    h1 {
+      font-size: 24px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -o-text-overflow: ellipsis;
+      -ms-text-overflow: ellipsis;
+    }
+  }
+
+  header ul {
+    display:none;
+  }
+}
