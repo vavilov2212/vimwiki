@@ -29,7 +29,8 @@
     <section>
       <nav>
         <ul>
-          {% for guide in site.guides %}
+          {% assign sorted_guides = site.guides | sort: 'title' %}
+          {% for guide in sorted_guides %}
             <li>
               <a href="{{ site.baseurl }}{{ guide.url }}" title="{{ guide.title }}">{{ guide.title }}</a>
             </li>

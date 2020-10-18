@@ -19,3 +19,9 @@ title: Unsorted
 <br> <br>
 #### Security
 - [SQL Injection and How to Prevent It?](https://www.baeldung.com/sql-injection)
+
+#### CMD
+- [30 Bash Script Examples](https://linuxhint.com/30_bash_script_examples/)
+- [Permission denied при запуске sh скрипта, что не так?](https://qna.habr.com/q/201649)
+- [SSH CHEATSHEET](https://cheatsheet.dennyzhang.com/cheatsheet-ssh-a4)
+- [Bash Shell Reference (manual)](https://courses.cs.washington.edu/courses/cse390a/14au/bash.html)
