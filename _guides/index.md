@@ -10,4 +10,5 @@
     * [Expo build:ios](expo_build_ios) -- Build android .apk using expo localy.
     * [Mobile emulation cmd](mobile_emulation_cmd)-- Commands to work with emulator/simulator from terminal.
     * [Mac OS related ](mac_os_stuff)-- Topics related to Mac OS
+    * [Unsorted](unsorted.md) -- Unsorted links
     * [TODO List](todo_list)-- List of todos.
