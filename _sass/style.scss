@@ -1,7 +1,7 @@
 // @import "normalize";
 @import "fonts";
 @import "rouge-base16-dark";
-// @import "not_relevant";
+@import "not_relevant";
 @import "header";
 
 section {
@@ -34,15 +34,20 @@ nav {
   ul {
     list-style: none;
     list-style-image:none;
-    font-size: 14px;
+    font-size: 16px;
     line-height:24px;
 
     li {
       padding: 5px 0px;
+      margin: 5px 0;
       line-height: 16px;
       // padding-right:17px;
       // position:relative;
       // right:-12px;
+
+      &:first-of-type {
+        margin-top: 0;
+      }
 
       &:last-of-type {
         margin-bottom: 30em;
@@ -73,11 +78,16 @@ nav {
       color: #666;
 
       &:hover { color: #999; }
+
     }
 
     .active {
        border-right:solid 4px #39C;
        padding-right:13px;
+
+      a {
+        font-weight: 600;
+      }
     }
   }
 }
@@ -138,10 +148,6 @@ footer {
 }
 
 @media print, screen and (max-height: 680px) {
-  nav {
-    display: none;
-  }
-
   footer {
     text-align: center;
     margin: 20px auto;
