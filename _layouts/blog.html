@@ -13,6 +13,10 @@
   <body>
 
     <header>
+
+      <!-- links to /wiki & /blog -->
+      {% include navigation.html %}
+
       <h1>{{ site.title | default: site.github.repository_name }}</h1>
       <p>{{ page.description | default: site.description | default: site.github.project_tagline }}</p>
       <div id="maintanance">

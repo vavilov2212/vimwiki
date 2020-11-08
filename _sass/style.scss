@@ -4,6 +4,17 @@
 @import "not_relevant";
 @import "header";
 
+body {
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 section {
   margin: 10em 7em 10em 0;
 }

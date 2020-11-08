@@ -33,6 +33,27 @@ header {
     font-size: 18px;
     margin: 0px;
   }
+
+  .navigationWrapper {
+    position: absolute;
+    display: flex;
+    float: left;
+    min-width: calc(12.5em * 2);
+    max-width: calc(15em * 2);
+    padding-left: 30px;
+    left: 17em;
+    top: 3.5em;
+    text-align: justify;
+    line-height: 2em;
+
+    a {
+      width: 25%;
+      color: 1px 3px 1px rgba(0,0,0,.75);
+      text-shadow: rgba(#000, 0.2) 0 1px 0;
+      font-size: 18px;
+      margin: 0px;
+    }
+  }
 }
 
 .info {

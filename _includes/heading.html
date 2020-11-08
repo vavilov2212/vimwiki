@@ -1,0 +1,11 @@
+<h1>{{ site.title | default: site.github.repository_name }}</h1>
+<p>{{ page.description | default: site.description | default: site.github.project_tagline }}</p>
+<div id="maintanance">
+  {% if site.github.is_project_page %}
+    <p>Project maintained by </p>
+    <a href="{{ site.github.owner_url }}">
+      <span id="logo"/></span>
+      {{ site.github.owner_name }}
+    </a>
+  {% endif %}
+</div>

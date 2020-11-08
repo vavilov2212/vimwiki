@@ -23,17 +23,6 @@
     </header>
 
     <section>
-      <nav>
-        <ul>
-          {% assign sorted_guides = site.guides | sort: 'title' %}
-          {% for guide in sorted_guides %}
-            <li>
-              <a href="{{ site.url }}{{ site.baseurl }}{{ guide.url }}" title="{{ guide.title }}">{{ guide.title }}</a>
-            </li>
-          {% endfor %}
-        </ul>
-      </nav>
-
       <div class="content"> {{ content }} </div>
     </section>
 
