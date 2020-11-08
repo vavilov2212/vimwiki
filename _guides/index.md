@@ -12,4 +12,7 @@
     * [Mac OS related ](mac_os_stuff)-- Topics related to Mac OS
     * [Unsorted](unsorted.md) -- Unsorted links
     * [Docker](docker.md) -- Docker
+    * [02_11_2020_pentest](02_11_2020_pentest.md) -- 1 занятие
+    * [03_11_2020_network](03_11_2020_network.md) -- 2 занятие
+    * [05_11_2020_redteam](05_11_2020_readteam.md) -- 3 занятие
     * [TODO List](todo_list)-- List of todos.

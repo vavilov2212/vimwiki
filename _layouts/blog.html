@@ -29,10 +29,10 @@
     <section>
       <nav>
         <ul>
-          {% assign sorted_guides = site.guides | sort: 'title' %}
-          {% for guide in sorted_guides %}
+          {% assign sorted_posts = site.posts | sort: 'date' %}
+          {% for post in sorted_posts %}
             <li>
-              <a href="{{ site.url }}{{ guide.url }}" title="{{ guide.title }}">{{ guide.title }}</a>
+              <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
             </li>
           {% endfor %}
         </ul>
