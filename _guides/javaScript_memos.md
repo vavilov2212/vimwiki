@@ -1,3 +1,7 @@
+---
+layout: default
+title: JavaScript memos
+---
 ### Заметки в работе с javascript
 
 ##### Exponential value
