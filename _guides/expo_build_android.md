@@ -5,16 +5,17 @@ title: Android Expo
 Prerequisites:
 
  package.json containts:
- 
+```json
     "scripts": {
-        "expo-publish": "expo-cli publish --clear --config app.json",
-        "build-android-apk": "turtle build:android --config app.json --type apk --output artifact/teamshop-mobile.apk --keystore-path node_modules/react-native/keystores/debug.keystore --keystore-alias androiddebugkey",
+      "expo-publish": "expo-cli publish --clear --config app.json",
+      "build-android-apk": "turtle build:android --config app.json --type apk --output artifact/teamshop-mobile.apk --keystore-path node_modules/react-native/keystores/debug.keystore --keystore-alias androiddebugkey",
     } 
     "dependencies": {
-        "expo": "37.0.0",
-        "expo-cli": "^3.20.3",
-        "turtle-cli": "^0.14.0",
-    }```
+      "expo": "37.0.0",
+      "expo-cli": "^3.20.3",
+      "turtle-cli": "^0.14.0",
+    }
+```
 
 To duil android .apk localy using expo you need to be signed in with expo-cli on your terminal. First insall expo globally
 ```bash
@@ -73,9 +74,11 @@ turtle build:android \
 
 Подробная инструкция взята с https://www.robincussol.com/build-standalone-expo-apk-ipa-with-turtle-cli/#4-create-apk-file----android
 
-Common errors:
+###### Common errors:<br/>
 - Please install JDK 8 - keep in mind that other versions are not supported by Android
 $JAVA_HOME должна указывать на соответствующую версию jdk<br/>
 ~/.config/fish/config.fish<br/>
+```bash
 set -gx JAVA_HOME /Volumes/Macintosh HD/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home $JAVA_HOME<br/>
 set -gx PATH ~/path/to/application_project_dir/node_modules/fastlane/ $PATH<br/>
+```
