@@ -74,8 +74,8 @@ turtle build:android \
 
 Подробная инструкция взята с https://www.robincussol.com/build-standalone-expo-apk-ipa-with-turtle-cli/#4-create-apk-file----android
 
-###### Common errors:<br/>
-- Please install JDK 8 - keep in mind that other versions are not supported by Android
+### Common errors:
+ -- Please install JDK 8 - keep in mind that other versions are not supported by Android
 $JAVA_HOME должна указывать на соответствующую версию jdk<br/>
 ~/.config/fish/config.fish<br/>
 ```bash
