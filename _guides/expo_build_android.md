@@ -75,10 +75,9 @@ turtle build:android \
 Подробная инструкция взята с https://www.robincussol.com/build-standalone-expo-apk-ipa-with-turtle-cli/#4-create-apk-file----android
 
 ### Common errors:
- -- Please install JDK 8 - keep in mind that other versions are not supported by Android
-$JAVA_HOME должна указывать на соответствующую версию jdk<br/>
-~/.config/fish/config.fish<br/>
+ -- Please install JDK 8 - keep in mind that other versions are not supported by Android $JAVA_HOME должна указывать на соответствующую версию jdk
+~/.config/fish/config.fish
 ```bash
-set -gx JAVA_HOME /Volumes/Macintosh HD/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home $JAVA_HOME<br/>
-set -gx PATH ~/path/to/application_project_dir/node_modules/fastlane/ $PATH<br/>
+set -gx JAVA_HOME /Volumes/Macintosh HD/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home $JAVA_HOME \
+set -gx PATH ~/path/to/application_project_dir/node_modules/fastlane/ $PATH
 ```
