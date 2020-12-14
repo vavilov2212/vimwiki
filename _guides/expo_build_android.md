@@ -14,7 +14,7 @@ Prerequisites:
         "expo": "37.0.0",
         "expo-cli": "^3.20.3",
         "turtle-cli": "^0.14.0",
-    }
+    }```
 
 To duil android .apk localy using expo you need to be signed in with expo-cli on your terminal. First insall expo globally
 ```bash
@@ -26,10 +26,11 @@ expo login|signin [options]
 ```
 Expo will build standalone .apk using published version of your app so first run the following command in you project directory
 ```bash
-cd /path/to/project
+cd /path/to/project \
 npm run expo-publish
 ```
 Don't forget to put "privacy": "unlisted" under "expo" tag in app.json config file as shown below
+```bash
 {
   "expo": {
     "name": "Application Name",
@@ -43,13 +44,17 @@ Don't forget to put "privacy": "unlisted" under "expo" tag in app.json config fi
     "icon": "./assets/icon-dev.png",
   }
 }
+```
 
 Once published configure the build command. You need 
 "build-android-apk": "turtle build:android --config app.json --type apk --output artifact/teamshop-mobile.apk --keystore-path node_modules/react-native/keystores/debug.keystore --keystore-alias androiddebugkey",
 
 --output [path where the desired .apk will be put]
 --keystore-path путь к ключам для подписи файла .apk
---keystore-alias alias который указывается при генерации ключа командой ```bash keytool -genkeypair -v -keystore keystore.jks -alias keyalias -keyalg RSA -keysize 2048 -validity 9125```
+--keystore-alias alias который указывается при генерации ключа командой
+```bash
+keytool -genkeypair -v -keystore keystore.jks -alias keyalias -keyalg RSA -keysize 2048 -validity 9125
+```
 
 Example:
 
@@ -69,8 +74,8 @@ turtle build:android \
 Подробная инструкция взята с https://www.robincussol.com/build-standalone-expo-apk-ipa-with-turtle-cli/#4-create-apk-file----android
 
 Common errors:
--- Please install JDK 8 - keep in mind that other versions are not supported by Android
-$JAVA_HOME должна указывать на соответствующую версию jdk
-~/.config/fish/config.fish
-set -gx JAVA_HOME /Volumes/Macintosh HD/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home $JAVA_HOME
-set -gx PATH ~/path/to/application_project_dir/node_modules/fastlane/ $PATH
+- Please install JDK 8 - keep in mind that other versions are not supported by Android
+$JAVA_HOME должна указывать на соответствующую версию jdk<br/>
+~/.config/fish/config.fish<br/>
+set -gx JAVA_HOME /Volumes/Macintosh HD/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home $JAVA_HOME<br/>
+set -gx PATH ~/path/to/application_project_dir/node_modules/fastlane/ $PATH<br/>
