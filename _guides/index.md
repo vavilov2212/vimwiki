@@ -16,4 +16,5 @@
     * [03_11_2020_network](03_11_2020_network.md) -- 2 занятие
     * [05_11_2020_redteam](05_11_2020_readteam.md) -- 3 занятие
     * [JavaScript memos](javaScript_memos.md) -- Записки по JavaScript
-    * [TODO List](todo_list)-- List of todos.
+    * [TODO List](todo_list) -- List of todos.
+    * [WordPress composer](wp_composer) -- Make wordpress project using composer.
