@@ -1,3 +1,7 @@
+---
+layout: default
+title: Wordpress with composer
+---
 #### Steps to reproduce assembly of WordPress project with composer.
 
 2. `Shell sudo apt install php`
