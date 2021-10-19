@@ -18,3 +18,4 @@
     * [JavaScript memos](javaScript_memos.md) -- Записки по JavaScript
     * [TODO List](todo_list) -- List of todos.
     * [WordPress composer](wp_composer) -- Make wordpress project using composer.
+    * [vim fugitive](vim-fugitive) -- Usefull commands
